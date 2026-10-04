@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { API_BASE_URL, apiFetch } from '../config';
+import { API_BASE_URL, apiFetch, BASE_URL } from '../config';
 import { BarChart3, Sliders, Image as ImageIcon, CheckCircle, Info, ExternalLink } from 'lucide-react';
 import { 
   BarChart, 
@@ -148,7 +148,7 @@ export default function ModelAnalysis() {
               </div>
               <div className="bg-white rounded-xl overflow-hidden border border-gray-200 flex items-center justify-center min-h-[220px]">
                 <img 
-                  src={`${API_BASE_URL}/plots/${p.file}`} 
+                  src={`${BASE_URL}plots/${p.file}`} 
                   alt={p.title} 
                   className="w-full h-auto object-contain hover:scale-105 transition duration-300"
                   onError={(e) => {
@@ -159,7 +159,7 @@ export default function ModelAnalysis() {
               </div>
               <div className="mt-3 flex justify-end">
                 <a 
-                  href={`${API_BASE_URL}/plots/${p.file}`} 
+                  href={`${BASE_URL}plots/${p.file}`} 
                   target="_blank" 
                   rel="noreferrer"
                   className="text-xs text-blue-400 hover:text-blue-700 flex items-center gap-1 font-semibold"
