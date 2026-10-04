@@ -1,6 +1,6 @@
 // Backend API Base URL Configuration
 export const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
-export const IS_STATIC = true;
+export const IS_STATIC = import.meta.env.PROD;
 export const BASE_URL = import.meta.env.BASE_URL;
 
 export const apiFetch = async (url, options) => {
@@ -36,7 +36,7 @@ export const apiFetch = async (url, options) => {
       jsonFile = `atm-rankings-${limit}.json`;
     }
     else if (url.endsWith('/')) {
-        return { ok: true };
+        return { ok: false }; // Ensure GitHub pages shows backend disconnected
     }
 
     if (jsonFile) {
