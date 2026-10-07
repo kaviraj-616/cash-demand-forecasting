@@ -1,0 +1,112 @@
+{
+    "best_model_name": "Ensemble Model",
+    "ensemble_weights": {
+        "Ridge Regression": 0.33,
+        "Random Forest": 0.334,
+        "Gradient Boosting": 0.336
+    },
+    "feature_importance_rf": {
+        "Net_Cash_Flow_Today": 0.9159936580924956,
+        "Withdrawal_to_Deposit_Ratio": 0.017410639827217394,
+        "Event_Or_Holiday": 0.014502293388492099,
+        "Previous_Day_Cash_Level": 0.010599293855131867,
+        "Day": 0.008352235405605358,
+        "Month": 0.0057152756900501565,
+        "Nearby_Competitor_ATMs": 0.00413540497681914,
+        "Special_Event_Flag": 0.003872953864304271,
+        "Day_of_Week_Num": 0.0028346895591284532,
+        "Weather_Condition_Cloudy": 0.001228363709231476,
+        "Time_of_Day_Morning": 0.0010062975595685132,
+        "Location_Type_Bank Branch": 0.0009872874025669389,
+        "Location_Type_Supermarket": 0.0009869961992789707,
+        "Weather_Condition_Clear": 0.0009749048944692147,
+        "Location_Type_Gas Station": 0.0009353863966931207,
+        "Weather_Condition_Snowy": 0.0009160770636762949,
+        "Time_of_Day_Night": 0.0009131367193060013,
+        "Location_Type_Standalone": 0.0009080663638257822,
+        "Weather_Condition_Rainy": 0.0008481116049566185,
+        "Time_of_Day_Evening": 0.0007887260936089898,
+        "Time_of_Day_Afternoon": 0.0007615390845909618,
+        "Location_Type_Mall": 0.0007331594276183175,
+        "Day_of_Week_Tuesday": 0.0006839684063134267,
+        "Day_of_Week_Wednesday": 0.000678861442243745,
+        "Day_of_Week_Thursday": 0.0006745206822551036,
+        "Day_of_Week_Friday": 0.0006028366273177763,
+        "Day_of_Week_Saturday": 0.0005057502406164082,
+        "Day_of_Week_Monday": 0.0004977668861562515,
+        "Day_of_Week_Sunday": 0.000434383095869493,
+        "Is_Weekend": 0.0003928482681173475,
+        "Holiday_Flag": 0.00012456717247477496
+    },
+    "tuning_parameters": {
+        "Ridge": {
+            "alpha": 1.0
+        },
+        "Random Forest": {
+            "max_depth": 10,
+            "min_samples_split": 5,
+            "n_estimators": 100
+        },
+        "Gradient Boosting": {
+            "learning_rate": 0.1,
+            "max_depth": 3,
+            "n_estimators": 100
+        }
+    },
+    "regression_metrics": [
+        {
+            "Model": "Ridge Regression",
+            "MAE": 5296.95,
+            "RMSE": 6367.93,
+            "R2_Score": 0.8446
+        },
+        {
+            "Model": "Random Forest Regressor",
+            "MAE": 5166.21,
+            "RMSE": 6291.4,
+            "R2_Score": 0.8483
+        },
+        {
+            "Model": "Gradient Boosting Regressor",
+            "MAE": 5163.62,
+            "RMSE": 6252.23,
+            "R2_Score": 0.8502
+        },
+        {
+            "Model": "Ensemble Model (Weighted)",
+            "MAE": 5171.95,
+            "RMSE": 6245.69,
+            "R2_Score": 0.8505
+        }
+    ],
+    "selected_classifier_name": "Logistic Regression",
+    "classification_metrics": [
+        {
+            "Classifier": "Logistic Regression",
+            "Accuracy": "96.91%",
+            "Precision": 0.2917,
+            "Recall": 0.9333,
+            "F1_Score": 0.4444
+        },
+        {
+            "Classifier": "Random Forest Classifier",
+            "Accuracy": "98.67%",
+            "Precision": 0.5,
+            "Recall": 0.5333,
+            "F1_Score": 0.5161
+        },
+        {
+            "Classifier": "Gradient Boosting Classifier",
+            "Accuracy": "99.12%",
+            "Precision": 0.7273,
+            "Recall": 0.5333,
+            "F1_Score": 0.6154
+        }
+    ],
+    "classifier_confusion_matrix": {
+        "tn": 1083,
+        "fp": 34,
+        "fn": 1,
+        "tp": 14
+    }
+}

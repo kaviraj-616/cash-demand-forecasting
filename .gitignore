@@ -3,9 +3,9 @@ __pycache__/
 *$py.class
 .pytest_cache/
 outputs/plots/
-outputs/metrics/
-models/*.pkl
-models/*.json
+# outputs/metrics/
+# models/*.pkl
+# models/*.json
 frontend/dist/
 frontend/node_modules/
 .env

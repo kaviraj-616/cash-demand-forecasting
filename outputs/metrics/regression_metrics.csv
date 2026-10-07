@@ -1,0 +1,5 @@
+Model,MAE,RMSE,R2_Score
+Ridge Regression,5296.95,6367.93,0.8446
+Random Forest Regressor,5166.21,6291.4,0.8483
+Gradient Boosting Regressor,5163.62,6252.23,0.8502
+Ensemble Model (Weighted),5171.95,6245.69,0.8505

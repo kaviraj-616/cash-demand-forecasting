@@ -1,0 +1,65 @@
+{
+    "categorical_categories": {
+        "Day_of_Week": [
+            "Friday",
+            "Monday",
+            "Saturday",
+            "Sunday",
+            "Thursday",
+            "Tuesday",
+            "Wednesday"
+        ],
+        "Time_of_Day": [
+            "Afternoon",
+            "Evening",
+            "Morning",
+            "Night"
+        ],
+        "Location_Type": [
+            "Bank Branch",
+            "Gas Station",
+            "Mall",
+            "Standalone",
+            "Supermarket"
+        ],
+        "Weather_Condition": [
+            "Clear",
+            "Cloudy",
+            "Rainy",
+            "Snowy"
+        ]
+    },
+    "feature_columns": [
+        "Previous_Day_Cash_Level",
+        "Holiday_Flag",
+        "Special_Event_Flag",
+        "Nearby_Competitor_ATMs",
+        "Month",
+        "Day",
+        "Day_of_Week_Num",
+        "Is_Weekend",
+        "Net_Cash_Flow_Today",
+        "Withdrawal_to_Deposit_Ratio",
+        "Event_Or_Holiday",
+        "Day_of_Week_Friday",
+        "Day_of_Week_Monday",
+        "Day_of_Week_Saturday",
+        "Day_of_Week_Sunday",
+        "Day_of_Week_Thursday",
+        "Day_of_Week_Tuesday",
+        "Day_of_Week_Wednesday",
+        "Time_of_Day_Afternoon",
+        "Time_of_Day_Evening",
+        "Time_of_Day_Morning",
+        "Time_of_Day_Night",
+        "Location_Type_Bank Branch",
+        "Location_Type_Gas Station",
+        "Location_Type_Mall",
+        "Location_Type_Standalone",
+        "Location_Type_Supermarket",
+        "Weather_Condition_Clear",
+        "Weather_Condition_Cloudy",
+        "Weather_Condition_Rainy",
+        "Weather_Condition_Snowy"
+    ]
+}
