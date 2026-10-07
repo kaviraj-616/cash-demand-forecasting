@@ -9,3 +9,9 @@ models/*.json
 frontend/dist/
 frontend/node_modules/
 .env
+
+venv/
+.env
+frontend/dist/
+frontend/node_modules/
+.pytest_cache/
